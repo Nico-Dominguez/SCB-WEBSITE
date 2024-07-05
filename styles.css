@@ -546,10 +546,6 @@ footer {
     justify-content: center;
   }
 
-  .hero {
-    text-align: center;
-  }
-
   .wrapper {
     padding: 0 1rem;
   }
@@ -588,5 +584,27 @@ footer {
 
   .contact-info {
     align-items: center;
+    margin-left: 0;
+  }
+
+  .maps {
+    overflow-y: hidden;
+  }
+
+  .socials-title {
+    flex-direction: column;
+  }
+
+  .socials-title h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
   }
 }
