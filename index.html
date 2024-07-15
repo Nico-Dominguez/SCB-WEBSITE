@@ -25,17 +25,47 @@
   <body>
     <div class="background">
       <section class="hero wrapper" id="main-page">
+        <!-- accessebility button -->
         <a href="#main-content" class="skip-link">Skip to main content</a>
-        <header role="banner">
-          <h1><a href="#main-page">SCB</a></h1>
+        <!-- navigation -->
+        <!-- <header role="banner" class="top-nav" id="myTopNav">
+          <a href="#main-page">SCB</a>
           <nav role="navigation">
             <ul>
-              <li><a href="#main-content" aria-current="page">About Us</a></li>
+              <li>
+                <a href="#main-content" aria-current="page" class="active"
+                  >About Us</a
+                >
+              </li>
               <li><a href="#">Contacts</a></li>
               <li><a href="#">Book An Appointment</a></li>
             </ul>
-          </nav>
-        </header>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav> -->
+        <!-- test -->
+        <nav class="topnav" id="myTopnav">
+          <ul>
+            <li>
+              <a href="#home" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#news">News</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+          </ul>
+          <a href="javascript:void(0);" class="icon" id="menuIcon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+        <!-- end test -->
+        <!-- mobile menu end -->
         <div class="hero-center">
           <h1 class="hero-title">Soda City Barbers</h1>
         </div>
@@ -93,56 +123,6 @@
           </div>
         </div>
       </div>
-      <!-- marquee -->
-      <!-- <div class="marquee">
-        <ul class="marquee-content">
-          <li>
-            <img
-              src="/public/marquee-test.jpg"
-              alt="barber cutting hair"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              src="/public/marquee-test.jpg"
-              alt="barber cutting hair"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              src="/public/marquee-test.jpg"
-              alt="barber cutting hair"
-              loading="lazy"
-            />
-          </li>
-        </ul>
-
-        <ul class="marquee-content" aria-hidden="true">
-          <li>
-            <img
-              src="/public/marquee-test.jpg"
-              alt="barber cutting hair"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              src="/public/marquee-test.jpg"
-              alt="barber cutting hair"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              src="/public/marquee-test.jpg"
-              alt="barber cutting hair"
-              loading="lazy"
-            />
-          </li>
-        </ul>
-      </div> -->
 
       <div class="wwa-about">
         <p class="wwa-about-left">
@@ -261,7 +241,7 @@
             </button>
           </form>
         </div>
-        <div class="contact-info">
+        <div class="open-hours">
           <h2>Columbia, SC</h2>
           <div class="maps">
             <iframe
@@ -283,29 +263,35 @@
       </div>
     </section>
 
-    <footer class="wrapper">
+    <footer class="footer wrapper">
       <div class="links">
         <div>
-          <h5>services</h5>
-          <h5>Booking</h5>
-          <h5>Barber School</h5>
+          <h4>Services</h4>
+          <ul class="contact-info">
+            <li><a href="#">Haircuts</a></li>
+            <li><a href="#">Styling</a></li>
+            <li><a href="#">Coloring</a></li>
+          </ul>
         </div>
         <div>
-          <h5>Booking</h5>
-          <h5>Contacts</h5>
-          <h5>Privacy policy</h5>
+          <h4>Information</h4>
+          <ul class="contact-info">
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="socia-media-links">
-        <h4>follow us</h4>
         <div>
-          <h5>instagram</h5>
-          <h5>Facebook</h5>
-          <h5>Pinterest</h5>
+          <h4>Follow us</h4>
+          <ul class="contact-info">
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Pinterest">Pinterest</a></li>
+          </ul>
         </div>
       </div>
       <div class="copyright">
-        <p>&#64; SCD - all rights reserved</p>
+        <p>&copy; SCB - all rights reserved</p>
       </div>
     </footer>
   </body>
