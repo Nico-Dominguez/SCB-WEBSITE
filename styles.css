@@ -464,6 +464,8 @@ nav a {
   height: 300px;
 }
 
+/* contact */
+
 .contact-flex {
   display: grid;
   grid-template-columns: 1fr 1fr;
